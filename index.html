@@ -65,7 +65,7 @@
             font-weight: bolder;
         }
 
- 
+
 
         #main-doc {
             position: absolute;
@@ -105,9 +105,16 @@
             font-size: x-large;
         }
 
-     
+
 
         @media only screen and (max-width: 815px) {
+
+            #main-doc {
+                margin-left: -10px;
+                margin-right: -10px; 
+                margin-top: 480px;
+                padding: 15px;
+            }
 
             /* For mobile phones: */
             #navbar ul {
@@ -127,28 +134,21 @@
                 z-index: 1;
                 border-bottom: 2px solid;
             }
-
-            #main-doc {
-                position: relative;
-                margin-left: 0px;
-                margin-top: 480px;
-            }
+          
         }
 
 
         @media only screen and (max-width: 400px) {
             #main-doc {
-                margin-left: -10px;
-                margin-top: 500px;
+                padding: 7px;
             }
 
-            code {
-                margin-left: -20px;
-                width: 100%;
-                padding: 15px;
-                padding-left: 10px;
-                padding-right: 45px;
-                min-width: 233px;
+            section article {
+                color: white;
+                margin: 10px;
+                border-radius: 10px;
+                padding: 5px;
+
             }
         }
     </style>
@@ -164,7 +164,8 @@
             <li><a class="nav-link" href="#Kotlin_para_Android">Kotlin para Android</a></li>
             <li><a class="nav-link" href="#Kotlin_para_JavaScript">Kotlin para JavaScript</a></li>
             <li><a class="nav-link" href="#Kotlin_para_la_ciencia_de_datos">Kotlin para la ciencia de datos</a></li>
-            <li><a class="nav-link" href="#Kotlin_para_programación_competitiva">Kotlin para programación competitiva</a></li>
+            <li><a class="nav-link" href="#Kotlin_para_programación_competitiva">Kotlin para programación
+                    competitiva</a></li>
             <li><a class="nav-link" href="#Sintaxis_básica">Sintaxis básica</a></li>
             <li><a class="nav-link" href="#Kotlin_Multiplataforma">Kotlin Multiplataforma</a></li>
             <li><a class="nav-link" href="#Ejecutar_pruebas_en_Kotlin/JS">Ejecutar pruebas en Kotlin/JS</a></li>
