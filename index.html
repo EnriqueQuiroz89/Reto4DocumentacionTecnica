@@ -178,10 +178,12 @@
                 <p>Kotlin is a modern but already mature programming language aimed to make developers happier. It’s
                     concise, safe, interoperable with Java and other languages, and provides many ways to reuse code
                     between multiple platforms for productive programming.
-                    Pick it up to start building powerful applications!</p>
+                    Pick it up to start building powerful applications!
                 <code>package test.bar
                     import foo.bar
                     import footoo.bar as footoo</code>
+                </p>
+                
 
                 <h2>Learn Kotlin fundamentals﻿</h2>
                 <ul>
@@ -232,6 +234,7 @@
                     El desarrollo móvil Android ha sido el primero de Kotlin desde Google I / O en 2019.
 
                     Usando Kotlin para el desarrollo de Android, puede beneficiarse de:
+                      </p>
                 <ul>
                     <li>Menos código combinado con mayor legibilidad. Pasa menos tiempo escribiendo tu código y
                         trabajando para entender el código de los demás.
@@ -259,7 +262,7 @@
                         Java.
                     </li>
                 </ul>
-                </p>
+              
             </article>
         </section>
 
@@ -276,9 +279,9 @@
                     Esto incluye funcionalidades esenciales como controlar el empaquetado de la aplicación, agregar
                     dependencias de JavaScript directamente desde npm y más. Para obtener una visión general de las
                     opciones disponibles, consulte la documentación de configuración del proyecto
-                   
+                      <code> Kotlin/JS.kotlin.jskotlin.multiplatform</code>
                 </p>
-                 <code> Kotlin/JS.kotlin.jskotlin.multiplatform</code>
+              
 
             </article>
         </section>
@@ -322,12 +325,12 @@
                     Consulte Introducción a Kotlin/JVM sobre cómo configurar el entorno de desarrollo para Kotlin. En la
                     programación competitiva, generalmente se crea un solo proyecto y la solución de cada problema se
                     escribe en un solo archivo fuente.
-                   
-                </p>
-                
-                 <code>tailrec fun removeZeroes(x: Int): Int =
+                   <code>tailrec fun removeZeroes(x: Int): Int =
                         if (x % 10 == 0) removeZeroes(x / 10) else x
                         fun f(x: Int) = removeZeroes(x + 1)</code>
+                </p>
+                
+                 
             </article>
         </section>
 
@@ -338,11 +341,13 @@
                     encontrará un enlace a una descripción detallada del tema relacionado.
 
                     También puedes aprender todos los elementos esenciales de Kotlin con la pista gratuita Kotlin Basics
-                    en JetBrains Academy.</p>
-                <code>package my.demo
+                    en JetBrains Academy.
+                  <code>package my.demo
                 import kotlin.text.*
                 // ...
                </code>
+                </p>
+              
             </article>
         </section>
 
@@ -381,8 +386,7 @@
                     de prueba y la funcionalidad estén disponibles para el destino javascript, agregue el artefacto de
                     plataforma correcto para kotlin.test en :build.gradle.kts
                 
-                </p>
-                    <code>target {
+                     <code>target {
                         browser {
                             testTask {
                                 useKarma {
@@ -392,6 +396,8 @@
                             }
                         }
                     }</code>
+                </p>
+                   
             </article>
         </section>
 
