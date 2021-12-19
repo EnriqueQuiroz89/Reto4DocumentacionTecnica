@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentacion Tecnica</title>
+
+    <style>
+        html,
+        body {
+            min-width: 290px;
+            color: #4d4e53;
+            background-color: #ffffff;
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        #navbar {
+            background: skyblue;
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color: slateblue;
+        }
+
+        header {
+            color: royalblue;
+            margin: 10px;
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bolder;
+        }
+
+        #main-doc header {
+            text-align: left;
+            margin: 0px;
+        }
+
+        #navbar ul {
+            height: 100%;
+            background: transparent;
+            padding: 0;
+        }
+
+        #navbar li {
+            border-top: 1px solid;
+            list-style: none;
+            background: navy;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #navbar a {
+            display: block;
+            padding: 10px 30px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bolder;
+        }
+
+ 
+
+        #main-doc {
+            position: absolute;
+            margin: 0px 0px 110px 310px;
+            padding: 40px;
+            background: powderblue;
+
+        }
+
+
+
+        section article {
+            color: white;
+            background: navy;
+            margin: 15px;
+            border-radius: 10px;
+            padding: 5px 20px;
+        }
+
+        section li {
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        code {
+            display: block;
+            text-align: center;
+            white-space: pre-line;
+            position: relative;
+            line-height: 2;
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            color: blue;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+
+     
+
+        @media only screen and (max-width: 815px) {
+
+            /* For mobile phones: */
+            #navbar ul {
+                border: 1px solid;
+                height: 207px;
+            }
+
+            #navbar {
+                background-color: white;
+                position: absolute;
+                top: 0;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                max-height: 275px;
+                border: none;
+                z-index: 1;
+                border-bottom: 2px solid;
+            }
+
+            #main-doc {
+                position: relative;
+                margin-left: 0px;
+                margin-top: 270px;
+            }
+        }
+
+
+        @media only screen and (max-width: 400px) {
+            #main-doc {
+                margin-left: -10px;
+            }
+
+            code {
+                margin-left: -20px;
+                width: 100%;
+                padding: 15px;
+                padding-left: 10px;
+                padding-right: 45px;
+                min-width: 233px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Kotlin Documentacion</header>
+        <ul>
+            <li><a class="nav-link" href="#Get_started_with_Kotlin">Get started with Kotlin</a></li>
+            <li><a class="nav-link" href="#Kotlin_for_server_side">Kotlin for server side</a></li>
+            <li><a class="nav-link" href="#Kotlin_para_Android">Kotlin para Android</a></li>
+            <li><a class="nav-link" href="#Kotlin_para_JavaScript">Kotlin para JavaScript</a></li>
+            <li><a class="nav-link" href="#Kotlin_para_la_ciencia_de_datos">Kotlin para la ciencia de datos</a></li>
+            <li><a class="nav-link" href="#Kotlin_para_programación_competitiva">Kotlin para programación competitiva</a></li>
+            <li><a class="nav-link" href="#Sintaxis_básica">Sintaxis básica</a></li>
+            <li><a class="nav-link" href="#Kotlin_Multiplataforma">Kotlin Multiplataforma</a></li>
+            <li><a class="nav-link" href="#Ejecutar_pruebas_en_Kotlin/JS">Ejecutar pruebas en Kotlin/JS</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Get_started_with_Kotlin">
+            <header>Get started with Kotlin</header>
+            <article>
+                <p>Kotlin is a modern but already mature programming language aimed to make developers happier. It’s
+                    concise, safe, interoperable with Java and other languages, and provides many ways to reuse code
+                    between multiple platforms for productive programming.
+                    Pick it up to start building powerful applications!</p>
+                <code>package test.bar
+                    import foo.bar
+                    import footoo.bar as footoo</code>
+
+                <h2>Learn Kotlin fundamentals﻿</h2>
+                <ul>
+                    <li>If you're already familiar with one or more programming languages and want to learn Kotlin,
+                        start with these Kotlin learning materials.
+                    </li>
+                    <li>If Kotlin is your first programming language, we recommend starting with the Atomic Kotlin book
+                        or signing up for the free Kotlin Basics track on JetBrains Academy.
+                    </li>
+                </ul>
+
+            </article>
+        </section>
+
+
+        <section class="main-section" id="Kotlin_for_server_side">
+            <header>Kotlin for server side</header>
+            <article>
+                <p>
+                    Kotlin is a great fit for developing server-side applications. It allows you to write concise and
+                    expressive code while maintaining full compatibility with existing Java-based technology stacks, all
+                    with a smooth learning curve:</p>
+                <ul>
+                    <li>IExpressiveness: Kotlin's innovative language features, such as its support for type-safe
+                        builders and delegated properties, help build powerful and easy-to-use abstractions.
+                    </li>
+                    <li>Scalability: Kotlin's support for coroutines helps build server-side applications that scale to
+                        massive numbers of clients with modest hardware requirements.
+                    </li>
+                    <li>Interoperability: Kotlin is fully compatible with all Java-based frameworks, so you can use your
+                        familiar technology stack while reaping the benefits of a more modern language.</li>
+                    <li>Migration: Kotlin supports gradual migration of large codebases from Java to Kotlin. You can
+                        start writing new code in Kotlin while keeping older parts of your system in Java.</li>
+                    <li>Tooling: In addition to great IDE support in general, Kotlin offers framework-specific tooling
+                        (for example, for Spring) in the plugin for IntelliJ IDEA Ultimate.</li>
+                    <li>Learning Curve: For a Java developer, getting started with Kotlin is very easy. The automated
+                        Java-to-Kotlin converter included in the Kotlin plugin helps with the first steps. Kotlin Koans
+                        can guide you through the key features of the language with a series of interactive exercises.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Kotlin_para_Android">
+            <header>Kotlin para Android</header>
+            <article>
+                <p>
+                    El desarrollo móvil Android ha sido el primero de Kotlin desde Google I / O en 2019.
+
+                    Usando Kotlin para el desarrollo de Android, puede beneficiarse de:
+                <ul>
+                    <li>Menos código combinado con mayor legibilidad. Pasa menos tiempo escribiendo tu código y
+                        trabajando para entender el código de los demás.
+                    </li>
+                    <li>Lenguaje y entorno maduros. Desde su creación en 2011, Kotlin se ha desarrollado continuamente,
+                        no solo como un lenguaje sino como un ecosistema completo con herramientas robustas. Ahora está
+                        perfectamente integrado en Android Studio y es utilizado activamente por muchas empresas para
+                        desarrollar aplicaciones androides.
+                    </li>
+                    <li>Soporte de Kotlin en Android Jetpack y otras bibliotecas. Las extensiones KTX agregan
+                        características del lenguaje Kotlin, como corutinas, funciones de extensión, lambdas y
+                        parámetros con nombre, a las bibliotecas de Android existentes.
+                    </li>
+                    <li>Interoperabilidad con Java. Puede utilizar Kotlin junto con el lenguaje de programación Java en
+                        sus aplicaciones sin necesidad de migrar todo su código a Kotlin.
+                    </li>
+                    <li>Soporte para desarrollo multiplataforma. Puede usar Kotlin para desarrollar no solo Android,
+                        sino también iOS,backend y aplicaciones web. Disfruta de los beneficios de compartir el código
+                        común entre las plataformas.
+                    </li>
+                    <li>Código de seguridad. Menos código y mejor legibilidad conducen a menos errores. El compilador
+                        Kotlin detecta estos errores restantes, haciendo que el código sea seguro.
+                    </li>
+                    <li>Fácil aprendizaje. Kotlin es muy fácil de aprender, especialmente para los desarrolladores de
+                        Java.
+                    </li>
+                </ul>
+                </p>
+            </article>
+        </section>
+
+
+
+        <section class="main-section" id="Kotlin_para_JavaScript">
+            <header>Kotlin para JavaScript</header>
+            <article>
+                <p>Kotlin/JS proporciona la capacidad de transpilar su código Kotlin, la biblioteca estándar Kotlin y
+                    cualquier dependencia compatible con JavaScript. La implementación actual de Kotlin/JS apunta a ES5.
+
+                    La forma recomendada de usar Kotlin / JS es a través de los complementos y Gradle. Le permiten
+                    configurar y controlar fácilmente los proyectos de Kotlin dirigidos a JavaScript en un solo lugar.
+                    Esto incluye funcionalidades esenciales como controlar el empaquetado de la aplicación, agregar
+                    dependencias de JavaScript directamente desde npm y más. Para obtener una visión general de las
+                    opciones disponibles, consulte la documentación de configuración del proyecto
+                    <code> Kotlin/JS.kotlin.jskotlin.multiplatform</code>
+                </p>
+
+            </article>
+        </section>
+
+
+        <section class="main-section" id="Kotlin_para_la_ciencia_de_datos">
+            <header>Kotlin para la ciencia de datos</header>
+            <article>
+                <p>Desde la creación de canalizaciones de datos hasta la producción de modelos de aprendizaje
+                    automático, Kotlin puede ser una excelente opción para trabajar con datos:
+                </p>
+                <ul>
+                    <li>Kotlin es conciso, legible y fácil de aprender.</li>
+                    <li>La escritura estática y la seguridad nula ayudan a crear código confiable y mantenible que es
+                        fácil de solucionar.
+                    </li>
+                    <li>Al ser un lenguaje JVM, Kotlin le brinda un gran rendimiento y la capacidad de aprovechar todo
+                        un ecosistema de bibliotecas Java probadas y verdaderas.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Kotlin_para_programación_competitiva">
+            <header>Kotlin para programación competitiva</header>
+            <article>
+                <p>Este tutorial está diseñado tanto para programadores competitivos que no usaron Kotlin antes como
+                    para desarrolladores de Kotlin que no participaron en ningún evento de programación competitiva
+                    antes. Asume las habilidades de programación correspondientes.
+
+                    La programación competitiva es un deporte mental donde los concursantes escriben programas para
+                    resolver problemas algorítmicos especificados con precisión dentro de estrictas restricciones. Los
+                    problemas pueden variar desde los simples que pueden ser resueltos por cualquier desarrollador de
+                    software y requieren poco código para obtener una solución correcta, hasta los complejos que
+                    requieren conocimiento de algoritmos especiales, estructuras de datos y mucha práctica. Si bien no
+                    está diseñado específicamente para la programación competitiva, Kotlin encaja bien en este dominio,
+                    reduciendo la cantidad típica de repetitivos que un programador necesita escribir y leer mientras
+                    trabaja con el código casi al nivel ofrecido por los lenguajes de scripting de tipo dinámico,
+                    mientras que tiene herramientas y rendimiento de un lenguaje de tipo estático.
+
+                    Consulte Introducción a Kotlin/JVM sobre cómo configurar el entorno de desarrollo para Kotlin. En la
+                    programación competitiva, generalmente se crea un solo proyecto y la solución de cada problema se
+                    escribe en un solo archivo fuente.
+                    <code>tailrec fun removeZeroes(x: Int): Int =
+                        if (x % 10 == 0) removeZeroes(x / 10) else x
+                        fun f(x: Int) = removeZeroes(x + 1)</code>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Sintaxis_básica">
+            <header>Sintaxis básica</header>
+            <article>
+                <p>Esta es una colección de elementos de sintaxis básicos con ejemplos. Al final de cada sección,
+                    encontrará un enlace a una descripción detallada del tema relacionado.
+
+                    También puedes aprender todos los elementos esenciales de Kotlin con la pista gratuita Kotlin Basics
+                    en JetBrains Academy.</p>
+                <code>package my.demo
+                import kotlin.text.*
+                // ...
+               </code>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="Kotlin_Multiplataforma">
+            <header>Kotlin Multiplataforma</header>
+            <article>
+                <p>El soporte para la programación multiplataforma es uno de los beneficios clave de Kotlin. Reduce el
+                    tiempo dedicado a escribir y mantener el mismo código para diferentes plataformas, al tiempo que
+                    conserva la flexibilidad y los beneficios de la programación nativa. Obtenga más información sobre
+                    los beneficios multiplataforma de Kotlin.
+
+                    Con Kotlin Multiplatform, comparta el código utilizando los mecanismos que Kotlin proporciona:
+                </p>
+                <ul>
+                    <li> La creación de una biblioteca Kotlin multiplataforma enseña cómo crear una biblioteca
+                        multiplataforma disponible para JVM, JS y Native y que se puede usar desde cualquier otro código
+                        común (por ejemplo, compartido con Android e iOS). También muestra cómo escribir pruebas que se
+                        ejecutarán en todas las plataformas y utilizar una implementación eficiente proporcionada por
+                        una plataforma específica.</li>
+                    <li>La creación de una aplicación web full stack con Kotlin Multiplatform enseña los conceptos
+                        detrás de la creación de una aplicación que se dirige a Kotlin / JVM y Kotlin / JS mediante la
+                        creación de una aplicación cliente-servidor que hace uso de código compartido, serialización y
+                        otros paradigmas multiplataforma. También proporciona una breve introducción al trabajo con Ktor
+                        como un marco del lado del servidor y del cliente.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Ejecutar_pruebas_en_Kotlin/JS">
+            <header>Ejecutar pruebas en Kotlin/JS</header>
+            <article>
+                <p>El complemento Kotlin / JS Gradle le permite ejecutar pruebas a través de una variedad de corredores
+                    de prueba que se pueden especificar a través de la configuración de Gradle. Para que las anotaciones
+                    de prueba y la funcionalidad estén disponibles para el destino javascript, agregue el artefacto de
+                    plataforma correcto para kotlin.test en :build.gradle.kts
+                    <code>target {
+                        browser {
+                            testTask {
+                                useKarma {
+                                    useChromeHeadless()
+                                    useFirefox()
+                                }
+                            }
+                        }
+                    }</code>
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>
